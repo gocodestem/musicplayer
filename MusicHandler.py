@@ -103,4 +103,3 @@ def getAllSongs():
     if errorCheck:
         return [[fields],[rows]]
 
-addSong("ASGORE","Carlos Arro","ZainSongs",r"c:\Users\Lapto\Downloads\ULTRAKILL-SteamRIP.com\ULTRAKILL\Cybergrind\Music\ASGORE.mp3")

@@ -1,8 +1,11 @@
 '''
 Initial Commit Version - 1.1 with Customtkinter
 '''
-import customtkinter 
+import customtkinter as ctk
 import MusicHandler
 
-print(MusicHandler.getAllSongs()) #checking if it works 
-print(MusicHandler.addSong("BigShot","Zain","ZainCoolMusic","Music")) #test value for addsong function
+app = ctk.CTk()
+app.geometry("800x800")
+title = ctk.CTkLabel(app,text="Your collection").pack()
+
+app.mainloop()
