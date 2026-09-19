@@ -5,4 +5,4 @@ import customtkinter
 import MusicHandler
 
 print(MusicHandler.getAllSongs()) #checking if it works 
-print(MusicHandler.addSong("","","","")) #test value for addsong function
+print(MusicHandler.addSong("BigShot","Zain","ZainCoolMusic","Music")) #test value for addsong function
