@@ -13,13 +13,13 @@ filename2 = os.path.join(base_dir, "songlist.csv")
 #first item is name, then artist, then album
 
 #open the file DUMMY. Filename2 is the actual songlist csv, we found that out using base dir, which is just the musicplayer folder (lines 10-12)
-with open(filename2, mode="r", encoding="utf-8") as file:
-    reader = csv.reader(file)
-    # convert it into a list
-    testData = list(reader)
-
-print(testData)
-
+def readfromcsv():  
+    with open(filename2, mode="r", encoding="utf-8") as file:
+        reader = csv.reader(file)
+        # convert it into a list
+        testData = list(reader)
+        return testData
+testData=readfromcsv()
 app = ctk.CTk()
 app.geometry("800x800")
 app.title("Zainify")
